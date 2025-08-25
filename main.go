@@ -65,8 +65,12 @@ func initHandlers() {
 }
 
 func getLinks() {
-	p := readFile("pages.txt", false)
-	r := readFile("resources.txt", false)
+	p, err := readFile("pages.txt", false)
+	_ = err
+	r, err := readFile("resources.txt", false)
+	if err != nil {
+
+	}
 	for x := range strings.Lines(p) {
 		pages = append(pages, strings.ReplaceAll(x, "\n", ""))
 	}
@@ -77,6 +81,7 @@ func getLinks() {
 
 func renderFile(name string, w http.ResponseWriter, r *http.Request) {
 	logRequest(r)
+	w.Header().Add("Cache-Content", "no-cache")
 	http.ServeFileFS(w, r, fs, name)
 }
 
@@ -95,48 +100,73 @@ func renderPage(name string, w http.ResponseWriter, r *http.Request) {
 
 func renderTemplate(page string, w http.ResponseWriter, r *http.Request) {
 	var x string
+	var err error
 	if r.RequestURI == "/" {
-		x = readFile("index.html", true)
+		x, err = readFile("index.html", true)
+		if err != nil {
+			writePage("", w)
+			return
+		}
 	} else {
 		if strings.Contains(r.RequestURI, "favicon") {
 			return
 		}
-		x = readFile(r.RequestURI, true)
+		// x, err = readFile(r.RequestURI[1:], true)
+		x, err = readFile(page, true)
+		if err != nil {
+			writePage("", w)
+			return
+		}
 	}
-	h, b, f := retreiveHBF()
-	s := fmt.Sprintf(x, fmt.Sprintf(h, page), b, f)
+	_ = x
+	h, b, f := retreiveHBF(page)
+	header := fmt.Sprintf(h, page)
+	template, err := readFile("template.html", true)
+	if err != nil {
+		log.Println("Template:", err)
+	}
+	
+	s := fmt.Sprintf(template, header, b, f)
 	writePage(s, w)
 }
 
-func retreiveHBF() (string, string, string) {
-	head := readFile("head.html", true)
-	body := readFile("body.html", true)
-	footer := readFile("footer.html", true)
+func retreiveHBF(name string) (string, string, string) {
+	head, err := readFile("head.html", true)
+	_ = err
+	body, err := readFile(name, true)
+	_ = err
+	footer, err := readFile("footer.html", true)
+	if err != nil {
+		return "", "", ""
+	}
 	return head, body, footer
 }
 
-func readFile(s string, useFS bool) string {
-	// fmt.Println(s)
+func readFile(s string, useFS bool) (string, error) {
 	if useFS {
 		file, err := fs.Open(s)
 		if err != nil {
 			log.Println(err)
+			return "", err
 		}
 		b, err := io.ReadAll(file)
 		if err != nil {
 			log.Println(err)
+			return "", err
 		}
-		return string(b)
+		return string(b), nil
 	} else {
 		file, err := os.Open(s)
 		if err != nil {
 			log.Println(err)
+			return "", err
 		}
 		b, err := io.ReadAll(file)
 		if err != nil {
 			log.Println(err)
+			return "", err
 		}
-		return string(b)
+		return string(b), nil
 	}
 }
 

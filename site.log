@@ -1,400 +1,54 @@
-2025/08/20 06:56:18 Starting...
-2025/08/20 06:56:22 127.0.0.1:49914:  /
-2025/08/20 06:58:37 Starting...
-2025/08/20 06:58:39 127.0.0.1:34884:  /
-2025/08/20 06:58:52 127.0.0.1:34884:  /
-2025/08/20 06:58:53 127.0.0.1:34884:  /
-2025/08/20 07:01:27 Starting...
-2025/08/20 07:01:29 127.0.0.1:60048:  /
-2025/08/20 07:01:30 127.0.0.1:60048:  /
-2025/08/20 07:08:40 Starting...
-2025/08/20 07:08:43 127.0.0.1:34518:  /
-2025/08/20 07:08:46 127.0.0.1:34518:  /page
-2025/08/20 07:09:14 Starting...
-2025/08/20 07:09:15 127.0.0.1:50740:  /
-2025/08/20 16:51:32 Starting...
-2025/08/20 16:51:38 127.0.0.1:55050:  /
-2025/08/20 16:51:39 127.0.0.1:55050:  /style.css
-2025/08/20 16:51:39 127.0.0.1:55064:  /script.js
-2025/08/20 16:51:39 127.0.0.1:55050:  /favicon.ico
-2025/08/20 16:54:15 Starting...
-2025/08/20 16:55:17 127.0.0.1:52340:  /
-2025/08/20 16:55:17 127.0.0.1:52340:  /style.css
-2025/08/20 16:55:17 127.0.0.1:52340:  /
-2025/08/20 16:55:18 127.0.0.1:52340:  /style.css
-2025/08/20 16:55:21 127.0.0.1:52340:  /
-2025/08/20 16:55:21 127.0.0.1:52340:  /style.css
-2025/08/20 16:58:01 127.0.0.1:57432:  /
-2025/08/20 16:58:02 127.0.0.1:57432:  /style.css
-2025/08/20 16:58:11 127.0.0.1:57432:  /
-2025/08/20 16:58:11 127.0.0.1:57432:  /style.css
-2025/08/20 16:58:11 127.0.0.1:57432:  /
-2025/08/20 16:58:11 127.0.0.1:57432:  /style.css
-2025/08/20 17:01:38 127.0.0.1:54966:  /
-2025/08/20 17:01:38 127.0.0.1:54966:  /style.css
-2025/08/20 17:04:04 127.0.0.1:42988:  /
-2025/08/20 17:04:04 127.0.0.1:42988:  /style.css
-2025/08/20 17:04:37 127.0.0.1:42988:  /
-2025/08/20 17:04:37 127.0.0.1:42988:  /style.css
-2025/08/20 17:24:30 Starting...
-2025/08/20 17:24:32 127.0.0.1:48074:  /
-2025/08/20 17:24:32 127.0.0.1:48074:  /style.css
-2025/08/20 17:24:37 127.0.0.1:48074:  /
-2025/08/20 17:25:04 127.0.0.1:48074:  /
-2025/08/20 17:25:04 127.0.0.1:48074:  /style.css
-2025/08/20 17:25:52 127.0.0.1:48074:  /
-2025/08/20 17:25:52 127.0.0.1:48074:  /style.css
-2025/08/20 17:26:27 127.0.0.1:48074:  /
-2025/08/20 17:26:27 127.0.0.1:48074:  /style.css
-2025/08/20 17:31:30 Starting...
-2025/08/20 17:31:32 127.0.0.1:47482:  /
-2025/08/20 17:31:32 127.0.0.1:47482:  /style.css
-2025/08/20 17:31:44 127.0.0.1:47482:  /
-2025/08/20 17:31:51 127.0.0.1:47482:  /
-2025/08/20 17:31:53 127.0.0.1:47482:  /
-2025/08/20 17:31:58 127.0.0.1:47482:  /
-2025/08/20 17:31:59 127.0.0.1:47482:  /
-2025/08/20 17:32:00 127.0.0.1:47482:  /
-2025/08/20 17:32:05 127.0.0.1:47482:  /
-2025/08/20 17:34:00 127.0.0.1:42880:  /
-2025/08/20 17:34:00 127.0.0.1:42880:  /style.css
-2025/08/20 17:34:01 127.0.0.1:42880:  /
-2025/08/20 17:34:01 127.0.0.1:42880:  /style.css
-2025/08/20 17:34:59 127.0.0.1:42880:  /
-2025/08/20 17:34:59 127.0.0.1:42880:  /style.css
-2025/08/20 18:04:29 127.0.0.1:49750:  /
-2025/08/20 18:04:29 127.0.0.1:49750:  /style.css
-2025/08/20 18:16:43 127.0.0.1:46734:  /
-2025/08/20 18:16:43 127.0.0.1:46734:  /style.css
-2025/08/21 02:36:37 Starting...
-2025/08/21 12:33:40 Starting...
-2025/08/21 12:33:41 127.0.0.1:46658:  /
-2025/08/21 12:33:41 127.0.0.1:46658:  /style.css
-2025/08/21 12:33:41 127.0.0.1:46658:  /script.js
-2025/08/21 12:33:42 127.0.0.1:46658:  /
-2025/08/21 12:33:43 127.0.0.1:46658:  /style.css
-2025/08/21 12:33:53 127.0.0.1:46658:  /
-2025/08/21 12:33:53 127.0.0.1:46658:  /style.css
-2025/08/21 12:33:53 127.0.0.1:46658:  /
-2025/08/21 12:33:53 127.0.0.1:46658:  /style.css
-2025/08/21 12:34:01 127.0.0.1:46658:  /
-2025/08/21 12:34:01 127.0.0.1:46658:  /style.css
-2025/08/21 12:34:21 Starting...
-2025/08/21 12:34:23 127.0.0.1:45126:  /
-2025/08/21 12:34:23 127.0.0.1:45126:  /style.css
-2025/08/21 12:40:28 127.0.0.1:35778:  /
-2025/08/21 12:40:28 127.0.0.1:35778:  /style.css
-2025/08/21 12:40:54 127.0.0.1:35778:  /
-2025/08/21 12:40:54 127.0.0.1:35778:  /style.css
-2025/08/21 14:44:11 Starting...
-2025/08/21 14:44:24 127.0.0.1:56314:  /
-2025/08/21 14:47:09 Starting...
-2025/08/21 14:47:12 127.0.0.1:37648:  /
-2025/08/21 14:47:12 127.0.0.1:37648:  /style.css
-2025/08/21 14:47:41 Starting...
-2025/08/21 14:47:51 127.0.0.1:37650:  /
-2025/08/21 14:47:51 127.0.0.1:37650:  /style.css
-2025/08/21 15:08:06 Starting...
-2025/08/21 15:08:08 127.0.0.1:37070:  /
-2025/08/21 15:08:09 127.0.0.1:37070:  /style.css
-2025/08/21 15:12:42 Starting...
-2025/08/21 15:12:45 127.0.0.1:45880:  /
-2025/08/21 15:12:47 127.0.0.1:45880:  /
-2025/08/21 15:13:23 Starting...
-2025/08/21 15:13:43 127.0.0.1:47574:  /
-2025/08/21 16:05:30 Starting...
-2025/08/21 16:08:28 Starting...
-2025/08/21 16:09:12 Starting...
-2025/08/21 16:09:21 127.0.0.1:50887:  /
-2025/08/21 16:09:21 127.0.0.1:50887:  /style.css
-2025/08/21 16:09:22 127.0.0.1:50887:  /favicon.ico
-2025/08/21 17:31:23 Starting...
-2025/08/21 17:31:29 127.0.0.1:51012:  /
-2025/08/21 17:31:29 127.0.0.1:51012:  /style.css
-2025/08/21 17:31:29 127.0.0.1:51012:  /favicon.ico
-2025/08/21 17:36:37 127.0.0.1:51045:  /
-2025/08/21 17:36:37 127.0.0.1:51045:  /favicon.ico
-2025/08/21 17:39:29 Starting...
-2025/08/21 17:39:32 127.0.0.1:51057:  /
-2025/08/21 17:39:32 127.0.0.1:51057:  /favicon.ico
-2025/08/21 17:39:32 open /favicon.ico: invalid argument
-2025/08/21 17:39:32 http: panic serving 127.0.0.1:51057: runtime error: invalid memory address or nil pointer dereference
-goroutine 7 [running]:
-net/http.(*conn).serve.func1()
-	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
-panic({0x4222c0?, 0x6ef090?})
-	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
-io.ReadAll({0x0, 0x0})
-	C:/Program Files/Go/src/io/io.go:712 +0x4d
-main.readFile({0xc0000144a4?, 0xc000046060?}, 0x20?)
-	C:/Users/z/Documents/html/main.go:122 +0x24a
-main.renderTemplate({0x47439f, 0xa}, {0x4f03e0, 0xc0000001c0}, 0xc000136280)
-	C:/Users/z/Documents/html/main.go:102 +0xd1
-main.renderIndex(...)
-	C:/Users/z/Documents/html/main.go:84
-main.renderPage({0xc00000a380, 0x1}, {0x4f03e0, 0xc0000001c0}, 0xc000136280)
-	C:/Users/z/Documents/html/main.go:90 +0x7f
-main.initHandlers.func1({0x4f03e0?, 0xc0000001c0?}, 0xc000029b38?)
-	C:/Users/z/Documents/html/main.go:57 +0x34
-net/http.HandlerFunc.ServeHTTP(0x6ffca0?, {0x4f03e0?, 0xc0000001c0?}, 0x36a696?)
-	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
-net/http.(*ServeMux).ServeHTTP(0x1abd39?, {0x4f03e0, 0xc0000001c0}, 0xc000136280)
-	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
-net/http.serverHandler.ServeHTTP({0xc000021320?}, {0x4f03e0?, 0xc0000001c0?}, 0x6?)
-	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
-net/http.(*conn).serve(0xc00010e240, {0x4f0870, 0xc000021230})
-	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
-created by net/http.(*Server).Serve in goroutine 1
-	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
-2025/08/21 17:39:32 127.0.0.1:51058:  /favicon.ico
-2025/08/21 17:39:32 open /favicon.ico: invalid argument
-2025/08/21 17:39:32 http: panic serving 127.0.0.1:51058: runtime error: invalid memory address or nil pointer dereference
-goroutine 8 [running]:
-net/http.(*conn).serve.func1()
-	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
-panic({0x4222c0?, 0x6ef090?})
-	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
-io.ReadAll({0x0, 0x0})
-	C:/Program Files/Go/src/io/io.go:712 +0x4d
-main.readFile({0xc0000144e4?, 0xc000046060?}, 0x20?)
-	C:/Users/z/Documents/html/main.go:122 +0x24a
-main.renderTemplate({0x47439f, 0xa}, {0x4f03e0, 0xc0000002a0}, 0xc000136140)
-	C:/Users/z/Documents/html/main.go:102 +0xd1
-main.renderIndex(...)
-	C:/Users/z/Documents/html/main.go:84
-main.renderPage({0xc00000a380, 0x1}, {0x4f03e0, 0xc0000002a0}, 0xc000136140)
-	C:/Users/z/Documents/html/main.go:90 +0x7f
-main.initHandlers.func1({0x4f03e0?, 0xc0000002a0?}, 0xc000043b38?)
-	C:/Users/z/Documents/html/main.go:57 +0x34
-net/http.HandlerFunc.ServeHTTP(0x6ffca0?, {0x4f03e0?, 0xc0000002a0?}, 0x36a696?)
-	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
-net/http.(*ServeMux).ServeHTTP(0x1abd39?, {0x4f03e0, 0xc0000002a0}, 0xc000136140)
-	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
-net/http.serverHandler.ServeHTTP({0xc000021410?}, {0x4f03e0?, 0xc0000002a0?}, 0x6?)
-	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
-net/http.(*conn).serve(0xc00010e360, {0x4f0870, 0xc000021230})
-	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
-created by net/http.(*Server).Serve in goroutine 1
-	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
-2025/08/21 17:39:32 127.0.0.1:51059:  /favicon.ico
-2025/08/21 17:39:32 open /favicon.ico: invalid argument
-2025/08/21 17:39:32 http: panic serving 127.0.0.1:51059: runtime error: invalid memory address or nil pointer dereference
-goroutine 18 [running]:
-net/http.(*conn).serve.func1()
-	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
-panic({0x4222c0?, 0x6ef090?})
-	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
-io.ReadAll({0x0, 0x0})
-	C:/Program Files/Go/src/io/io.go:712 +0x4d
-main.readFile({0xc000014524?, 0xc000046060?}, 0x20?)
-	C:/Users/z/Documents/html/main.go:122 +0x24a
-main.renderTemplate({0x47439f, 0xa}, {0x4f03e0, 0xc000000380}, 0xc0001363c0)
-	C:/Users/z/Documents/html/main.go:102 +0xd1
-main.renderIndex(...)
-	C:/Users/z/Documents/html/main.go:84
-main.renderPage({0xc00000a380, 0x1}, {0x4f03e0, 0xc000000380}, 0xc0001363c0)
-	C:/Users/z/Documents/html/main.go:90 +0x7f
-main.initHandlers.func1({0x4f03e0?, 0xc000000380?}, 0xc000145b38?)
-	C:/Users/z/Documents/html/main.go:57 +0x34
-net/http.HandlerFunc.ServeHTTP(0x6ffca0?, {0x4f03e0?, 0xc000000380?}, 0x36a696?)
-	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
-net/http.(*ServeMux).ServeHTTP(0x1abd39?, {0x4f03e0, 0xc000000380}, 0xc0001363c0)
-	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
-net/http.serverHandler.ServeHTTP({0xc0000216e0?}, {0x4f03e0?, 0xc000000380?}, 0x6?)
-	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
-net/http.(*conn).serve(0xc000096000, {0x4f0870, 0xc000021230})
-	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
-created by net/http.(*Server).Serve in goroutine 1
-	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
-2025/08/21 17:40:02 127.0.0.1:51060:  /
-2025/08/21 17:40:02 127.0.0.1:51060:  /favicon.ico
-2025/08/21 17:40:02 open /favicon.ico: invalid argument
-2025/08/21 17:40:02 http: panic serving 127.0.0.1:51060: runtime error: invalid memory address or nil pointer dereference
-goroutine 13 [running]:
-net/http.(*conn).serve.func1()
-	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
-panic({0x4222c0?, 0x6ef090?})
-	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
-io.ReadAll({0x0, 0x0})
-	C:/Program Files/Go/src/io/io.go:712 +0x4d
-main.readFile({0xc0000a6064?, 0xc000046060?}, 0x20?)
-	C:/Users/z/Documents/html/main.go:122 +0x24a
-main.renderTemplate({0x47439f, 0xa}, {0x4f03e0, 0xc0000b20e0}, 0xc0000c6000)
-	C:/Users/z/Documents/html/main.go:102 +0xd1
-main.renderIndex(...)
-	C:/Users/z/Documents/html/main.go:84
-main.renderPage({0xc00000a380, 0x1}, {0x4f03e0, 0xc0000b20e0}, 0xc0000c6000)
-	C:/Users/z/Documents/html/main.go:90 +0x7f
-main.initHandlers.func1({0x4f03e0?, 0xc0000b20e0?}, 0xc000029b38?)
-	C:/Users/z/Documents/html/main.go:57 +0x34
-net/http.HandlerFunc.ServeHTTP(0x6ffca0?, {0x4f03e0?, 0xc0000b20e0?}, 0x36a696?)
-	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
-net/http.(*ServeMux).ServeHTTP(0x1abd39?, {0x4f03e0, 0xc0000b20e0}, 0xc0000c6000)
-	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
-net/http.serverHandler.ServeHTTP({0xc000021860?}, {0x4f03e0?, 0xc0000b20e0?}, 0x6?)
-	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
-net/http.(*conn).serve(0xc00010e630, {0x4f0870, 0xc000021230})
-	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
-created by net/http.(*Server).Serve in goroutine 1
-	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
-2025/08/21 17:40:02 127.0.0.1:51061:  /favicon.ico
-2025/08/21 17:40:02 open /favicon.ico: invalid argument
-2025/08/21 17:40:02 http: panic serving 127.0.0.1:51061: runtime error: invalid memory address or nil pointer dereference
-goroutine 14 [running]:
-net/http.(*conn).serve.func1()
-	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
-panic({0x4222c0?, 0x6ef090?})
-	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
-io.ReadAll({0x0, 0x0})
-	C:/Program Files/Go/src/io/io.go:712 +0x4d
-main.readFile({0xc0000a60a4?, 0xc000046060?}, 0x20?)
-	C:/Users/z/Documents/html/main.go:122 +0x24a
-main.renderTemplate({0x47439f, 0xa}, {0x4f03e0, 0xc0000b21c0}, 0xc000136640)
-	C:/Users/z/Documents/html/main.go:102 +0xd1
-main.renderIndex(...)
-	C:/Users/z/Documents/html/main.go:84
-main.renderPage({0xc00000a380, 0x1}, {0x4f03e0, 0xc0000b21c0}, 0xc000136640)
-	C:/Users/z/Documents/html/main.go:90 +0x7f
-main.initHandlers.func1({0x4f03e0?, 0xc0000b21c0?}, 0xc000149b38?)
-	C:/Users/z/Documents/html/main.go:57 +0x34
-net/http.HandlerFunc.ServeHTTP(0x6ffca0?, {0x4f03e0?, 0xc0000b21c0?}, 0x36a696?)
-	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
-net/http.(*ServeMux).ServeHTTP(0x1abd39?, {0x4f03e0, 0xc0000b21c0}, 0xc000136640)
-	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
-net/http.serverHandler.ServeHTTP({0xc000021920?}, {0x4f03e0?, 0xc0000b21c0?}, 0x6?)
-	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
-net/http.(*conn).serve(0xc00010e6c0, {0x4f0870, 0xc000021230})
-	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
-created by net/http.(*Server).Serve in goroutine 1
-	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
-2025/08/21 17:40:02 127.0.0.1:51062:  /favicon.ico
-2025/08/21 17:40:02 open /favicon.ico: invalid argument
-2025/08/21 17:40:02 http: panic serving 127.0.0.1:51062: runtime error: invalid memory address or nil pointer dereference
-goroutine 22 [running]:
-net/http.(*conn).serve.func1()
-	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
-panic({0x4222c0?, 0x6ef090?})
-	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
-io.ReadAll({0x0, 0x0})
-	C:/Program Files/Go/src/io/io.go:712 +0x4d
-main.readFile({0xc00018c004?, 0xc000046060?}, 0x20?)
-	C:/Users/z/Documents/html/main.go:122 +0x24a
-main.renderTemplate({0x47439f, 0xa}, {0x4f03e0, 0xc0001a2000}, 0xc000188000)
-	C:/Users/z/Documents/html/main.go:102 +0xd1
-main.renderIndex(...)
-	C:/Users/z/Documents/html/main.go:84
-main.renderPage({0xc00000a380, 0x1}, {0x4f03e0, 0xc0001a2000}, 0xc000188000)
-	C:/Users/z/Documents/html/main.go:90 +0x7f
-main.initHandlers.func1({0x4f03e0?, 0xc0001a2000?}, 0xc000149b38?)
-	C:/Users/z/Documents/html/main.go:57 +0x34
-net/http.HandlerFunc.ServeHTTP(0x6ffca0?, {0x4f03e0?, 0xc0001a2000?}, 0x36a696?)
-	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
-net/http.(*ServeMux).ServeHTTP(0x1abd39?, {0x4f03e0, 0xc0001a2000}, 0xc000188000)
-	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
-net/http.serverHandler.ServeHTTP({0xc000184030?}, {0x4f03e0?, 0xc0001a2000?}, 0x6?)
-	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
-net/http.(*conn).serve(0xc000096240, {0x4f0870, 0xc000021230})
-	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
-created by net/http.(*Server).Serve in goroutine 1
-	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
-2025/08/21 17:40:51 Starting...
-2025/08/21 17:40:52 127.0.0.1:51066:  /
-2025/08/21 17:40:52 127.0.0.1:51066:  /favicon.ico
-2025/08/21 17:40:52 open /favicon.ico: invalid argument
-2025/08/21 17:40:52 http: panic serving 127.0.0.1:51066: runtime error: invalid memory address or nil pointer dereference
-goroutine 7 [running]:
-net/http.(*conn).serve.func1()
-	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
-panic({0xba22c0?, 0xe6f090?})
-	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
-io.ReadAll({0x0, 0x0})
-	C:/Program Files/Go/src/io/io.go:712 +0x4d
-main.readFile({0xc0000ca064, 0xc}, 0x1)
-	C:/Users/z/Documents/html/main.go:123 +0x2ca
-main.renderTemplate({0xbf439f, 0xa}, {0xc70420, 0xc0000d40e0}, 0xc0000ac140)
-	C:/Users/z/Documents/html/main.go:102 +0xd1
-main.renderIndex(...)
-	C:/Users/z/Documents/html/main.go:84
-main.renderPage({0xc00000a380, 0x1}, {0xc70420, 0xc0000d40e0}, 0xc0000ac140)
-	C:/Users/z/Documents/html/main.go:90 +0x7f
-main.initHandlers.func1({0xc70420?, 0xc0000d40e0?}, 0xc000029b38?)
-	C:/Users/z/Documents/html/main.go:57 +0x34
-net/http.HandlerFunc.ServeHTTP(0xe7fca0?, {0xc70420?, 0xc0000d40e0?}, 0xaea696?)
-	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
-net/http.(*ServeMux).ServeHTTP(0x92bd39?, {0xc70420, 0xc0000d40e0}, 0xc0000ac140)
-	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
-net/http.serverHandler.ServeHTTP({0xc000021320?}, {0xc70420?, 0xc0000d40e0?}, 0x6?)
-	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
-net/http.(*conn).serve(0xc00010e240, {0xc708b0, 0xc000021230})
-	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
-created by net/http.(*Server).Serve in goroutine 1
-	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
-2025/08/21 17:40:52 127.0.0.1:51067:  /favicon.ico
-2025/08/21 17:40:52 open /favicon.ico: invalid argument
-2025/08/21 17:40:52 http: panic serving 127.0.0.1:51067: runtime error: invalid memory address or nil pointer dereference
-goroutine 18 [running]:
-net/http.(*conn).serve.func1()
-	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
-panic({0xba22c0?, 0xe6f090?})
-	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
-io.ReadAll({0x0, 0x0})
-	C:/Program Files/Go/src/io/io.go:712 +0x4d
-main.readFile({0xc0000ca0c4, 0xc}, 0x1)
-	C:/Users/z/Documents/html/main.go:123 +0x2ca
-main.renderTemplate({0xbf439f, 0xa}, {0xc70420, 0xc0000d41c0}, 0xc0000ac000)
-	C:/Users/z/Documents/html/main.go:102 +0xd1
-main.renderIndex(...)
-	C:/Users/z/Documents/html/main.go:84
-main.renderPage({0xc00000a380, 0x1}, {0xc70420, 0xc0000d41c0}, 0xc0000ac000)
-	C:/Users/z/Documents/html/main.go:90 +0x7f
-main.initHandlers.func1({0xc70420?, 0xc0000d41c0?}, 0xc0000b5b38?)
-	C:/Users/z/Documents/html/main.go:57 +0x34
-net/http.HandlerFunc.ServeHTTP(0xe7fca0?, {0xc70420?, 0xc0000d41c0?}, 0xaea696?)
-	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
-net/http.(*ServeMux).ServeHTTP(0x92bd39?, {0xc70420, 0xc0000d41c0}, 0xc0000ac000)
-	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
-net/http.serverHandler.ServeHTTP({0xc00008e090?}, {0xc70420?, 0xc0000d41c0?}, 0x6?)
-	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
-net/http.(*conn).serve(0xc000092000, {0xc708b0, 0xc000021230})
-	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
-created by net/http.(*Server).Serve in goroutine 1
-	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
-2025/08/21 17:40:52 127.0.0.1:51068:  /favicon.ico
-2025/08/21 17:40:52 open /favicon.ico: invalid argument
-2025/08/21 17:40:52 http: panic serving 127.0.0.1:51068: runtime error: invalid memory address or nil pointer dereference
-goroutine 34 [running]:
-net/http.(*conn).serve.func1()
-	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
-panic({0xba22c0?, 0xe6f090?})
-	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
-io.ReadAll({0x0, 0x0})
-	C:/Program Files/Go/src/io/io.go:712 +0x4d
-main.readFile({0xc0001a8004, 0xc}, 0x1)
-	C:/Users/z/Documents/html/main.go:123 +0x2ca
-main.renderTemplate({0xbf439f, 0xa}, {0xc70420, 0xc0001b6000}, 0xc0001a4000)
-	C:/Users/z/Documents/html/main.go:102 +0xd1
-main.renderIndex(...)
-	C:/Users/z/Documents/html/main.go:84
-main.renderPage({0xc00000a380, 0x1}, {0xc70420, 0xc0001b6000}, 0xc0001a4000)
-	C:/Users/z/Documents/html/main.go:90 +0x7f
-main.initHandlers.func1({0xc70420?, 0xc0001b6000?}, 0xc000097b38?)
-	C:/Users/z/Documents/html/main.go:57 +0x34
-net/http.HandlerFunc.ServeHTTP(0xe7fca0?, {0xc70420?, 0xc0001b6000?}, 0xaea696?)
-	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
-net/http.(*ServeMux).ServeHTTP(0x92bd39?, {0xc70420, 0xc0001b6000}, 0xc0001a4000)
-	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
-net/http.serverHandler.ServeHTTP({0xc000198090?}, {0xc70420?, 0xc0001b6000?}, 0x6?)
-	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
-net/http.(*conn).serve(0xc00019c000, {0xc708b0, 0xc000021230})
-	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
-created by net/http.(*Server).Serve in goroutine 1
-	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
-2025/08/21 17:46:49 Starting...
-2025/08/21 17:46:50 127.0.0.1:51076:  /
-2025/08/21 17:46:50 127.0.0.1:51076:  /favicon.ico
-2025/08/21 17:46:50 127.0.0.1:51076:  /
-2025/08/21 17:46:50 127.0.0.1:51076:  /favicon.ico
-2025/08/21 17:47:33 Starting...
-2025/08/21 17:47:37 127.0.0.1:51082:  /
-2025/08/21 17:47:38 127.0.0.1:51082:  /favicon.ico
-2025/08/21 17:48:17 127.0.0.1:51082:  /favicon.ico
+2025/08/24 16:48:02 127.0.0.1:55521:  /sitemap
+2025/08/24 16:48:02 127.0.0.1:55521:  /style.css
+2025/08/24 16:48:02 127.0.0.1:55521:  /favicon.ico
+2025/08/24 16:48:03 127.0.0.1:55521:  /
+2025/08/24 16:48:03 127.0.0.1:55521:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/24 16:48:03 127.0.0.1:55521:  /style.css
+2025/08/24 16:48:03 127.0.0.1:55521:  /favicon.ico
+2025/08/24 16:48:05 127.0.0.1:55521:  /sitemap
+2025/08/24 16:48:05 127.0.0.1:55521:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/24 16:48:05 127.0.0.1:55521:  /favicon.ico
+2025/08/24 16:48:07 127.0.0.1:55521:  /sitemap
+2025/08/24 16:48:07 127.0.0.1:55521:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/24 16:48:07 127.0.0.1:55521:  /favicon.ico
+2025/08/24 17:00:23 127.0.0.1:55947:  /sitem
+2025/08/24 17:00:23 127.0.0.1:55947:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/24 17:00:23 127.0.0.1:55947:  /style.css
+2025/08/24 17:00:24 127.0.0.1:55947:  /favicon.ico
+2025/08/24 17:00:29 127.0.0.1:55947:  /sitemap
+2025/08/24 17:00:29 127.0.0.1:55947:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/24 17:00:29 127.0.0.1:55947:  /favicon.ico
+2025/08/25 13:21:38 127.0.0.1:57191:  /sitemap
+2025/08/25 13:21:38 127.0.0.1:57191:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/25 13:21:38 127.0.0.1:57192:  /style.css
+2025/08/25 13:21:38 127.0.0.1:57193:  /script.js
+2025/08/25 13:21:38 127.0.0.1:57193:  /favicon.ico
+2025/08/25 13:24:23 Starting...
+2025/08/25 13:24:26 127.0.0.1:57278:  /sitemap
+2025/08/25 13:24:26 127.0.0.1:57278:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/25 13:24:26 127.0.0.1:57278:  /favicon.ico
+2025/08/25 13:24:28 127.0.0.1:57278:  /sitemap
+2025/08/25 13:24:28 127.0.0.1:57278:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/25 13:24:28 127.0.0.1:57278:  /favicon.ico
+2025/08/25 13:24:30 127.0.0.1:57278:  /
+2025/08/25 13:24:30 127.0.0.1:57278:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/25 13:24:30 127.0.0.1:57278:  /favicon.ico
+2025/08/25 13:24:32 127.0.0.1:57278:  /sitemap
+2025/08/25 13:24:32 127.0.0.1:57278:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/25 13:24:32 127.0.0.1:57278:  /favicon.ico
+2025/08/25 13:25:18 127.0.0.1:57278:  /sitemap
+2025/08/25 13:25:18 127.0.0.1:57278:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/25 13:25:18 127.0.0.1:57278:  /favicon.ico
+2025/08/25 13:25:21 127.0.0.1:57278:  /
+2025/08/25 13:25:21 127.0.0.1:57278:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/25 13:25:21 127.0.0.1:57278:  /favicon.ico
+2025/08/25 13:25:22 127.0.0.1:57278:  /sitemap
+2025/08/25 13:25:23 127.0.0.1:57278:  /.well-known/appspecific/com.chrome.devtools.json
+2025/08/25 13:25:23 127.0.0.1:57278:  /favicon.ico
+2025/08/25 13:59:59 Starting...
+2025/08/25 18:11:33 127.0.0.1:59101:  /favicon.ico
+2025/08/25 18:17:23 127.0.0.1:59163:  /sitem
+2025/08/25 18:17:23 127.0.0.1:59163:  /style.css
+2025/08/25 18:17:23 127.0.0.1:59163:  /favicon.ico
+2025/08/25 18:17:26 127.0.0.1:59163:  /
+2025/08/25 18:17:27 127.0.0.1:59163:  /favicon.ico
