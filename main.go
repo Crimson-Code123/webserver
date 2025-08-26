@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io"
 	"log"
@@ -15,20 +16,21 @@ var (
 	logger      *os.File
 	fsdir       = "contents"
 	fs          = os.DirFS(fsdir + "/")
-	pages       = []string{}
-	files       = []string{}
+	jpages      *Sitemap
+	files       []string
 )
 
 func main() {
 	setOutput()
-	fmt.Println("")
+	jpages = new(Sitemap)
+	readPages()
 	log.Println("Starting...")
 	initHandlers()
 	initServer()
 }
 
 func setOutput() {
-	file, err := os.OpenFile(logFileName, os.O_APPEND|os.O_RDWR, 0666)
+	file, err := os.OpenFile(logFileName, os.O_APPEND|os.O_RDWR|os.O_CREATE, 0666)
 	if err != nil {
 		log.Println(err)
 	}
@@ -52,7 +54,7 @@ func initServer() {
 func initHandlers() {
 	//create file list and display
 	getLinks()
-	for _, v := range pages {
+	for _, v := range jpages.Pages {
 		http.HandleFunc(v, func(w http.ResponseWriter, r *http.Request) {
 			renderPage(v, w, r)
 		})
@@ -65,15 +67,15 @@ func initHandlers() {
 }
 
 func getLinks() {
-	p, err := readFile("pages.txt", false)
-	_ = err
+	// p, err := readFile("pages.txt", false)
+	// _ = err
 	r, err := readFile("resources.txt", false)
 	if err != nil {
 
 	}
-	for x := range strings.Lines(p) {
-		pages = append(pages, strings.ReplaceAll(x, "\n", ""))
-	}
+	// for x := range strings.Lines(p) {
+	// 	pages = append(pages, strings.ReplaceAll(x, "\n", ""))
+	// }
 	for x := range strings.Lines(r) {
 		files = append(files, strings.ReplaceAll(x, "\n", ""))
 	}
@@ -119,13 +121,15 @@ func renderTemplate(page string, w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	_ = x
+	// fmt.Printf("%s", pages)
+	// fmt.Println(pages)
 	h, b, f := retreiveHBF(page)
 	header := fmt.Sprintf(h, page)
 	template, err := readFile("template.html", true)
 	if err != nil {
 		log.Println("Template:", err)
 	}
-	
+
 	s := fmt.Sprintf(template, header, b, f)
 	writePage(s, w)
 }
@@ -176,4 +180,34 @@ func writePage(s string, w http.ResponseWriter) {
 
 func logRequest(r *http.Request) {
 	log.Println(r.RemoteAddr+": ", r.RequestURI)
+}
+
+func readPages() {
+	file, err := os.Open("pages.json")
+	if err != nil {
+		log.Println(err)
+	}
+	defer file.Close()
+	err = json.NewDecoder(file).Decode(jpages)
+	if err != nil {
+		log.Println(err)
+	}
+}
+
+func writePages() {
+	file, err := os.OpenFile("pages.json", os.O_RDWR|os.O_CREATE, 0666)
+	if err != nil {
+		log.Println(err)
+	}
+	defer file.Close()
+	encoder := json.NewEncoder(file)
+	encoder.SetIndent("", "    ")
+	err = encoder.Encode(jpages)
+	if err != nil {
+		log.Println(err)
+	}
+}
+
+type Sitemap struct {
+	Pages []string `json:"pages"`
 }
