@@ -1,0 +1,21 @@
+html {
+	background-color: #000000;
+}
+
+h1, h2, h3 {
+	color: #00ff00;
+}
+
+p {
+	color: #00ff00;
+}
+
+a {
+	text-decoration-color: #00ff00;
+	color: #00ff00;
+}
+
+* {
+	cursor: unset;
+}
+

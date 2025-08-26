@@ -18,6 +18,9 @@ var (
 	fs          = os.DirFS(fsdir + "/")
 	jpages      *Sitemap
 	files       []string
+	blocked     = []string{
+		".well-known",
+	}
 )
 
 func main() {
@@ -26,6 +29,7 @@ func main() {
 	readPages()
 	log.Println("Starting...")
 	initHandlers()
+	fmt.Println(http.DefaultServeMux)
 	initServer()
 }
 
@@ -59,11 +63,6 @@ func initHandlers() {
 			renderPage(v, w, r)
 		})
 	}
-	for _, v := range files {
-		http.HandleFunc(v, func(w http.ResponseWriter, r *http.Request) {
-			renderFile(v, w, r)
-		})
-	}
 }
 
 func getLinks() {
@@ -81,48 +80,38 @@ func getLinks() {
 	}
 }
 
-func renderFile(name string, w http.ResponseWriter, r *http.Request) {
-	logRequest(r)
-	w.Header().Add("Cache-Content", "no-cache")
-	http.ServeFileFS(w, r, fs, name)
-}
-
 func renderIndex(w http.ResponseWriter, r *http.Request) {
-	renderTemplate("index.html", w, r)
+	renderTemplate("index", w, r)
 }
 
 func renderPage(name string, w http.ResponseWriter, r *http.Request) {
-	logRequest(r)
-	if len(name[1:]) == 0 { //index page
-		renderIndex(w, r)
-	} else {
-		renderTemplate(name[1:]+".html", w, r)
+	logRequest(name, r)
+	w.Header().Add("Cache-Control", "no-cache")
+	fmt.Printf("Name: %s | URI: %s\n", name, r.RequestURI)
+	//todo: page blocks
+	if r.RequestURI != name { //serve a file
+		http.ServeFileFS(w, r, fs, r.RequestURI)
+	} else { //serve webpage
+		n := name[1:] //
+		if n == "" {  //index page
+			renderIndex(w, r)
+		} else {
+			renderTemplate(n, w, r)
+		}
 	}
 }
 
 func renderTemplate(page string, w http.ResponseWriter, r *http.Request) {
 	var x string
 	var err error
-	if r.RequestURI == "/" {
-		x, err = readFile("index.html", true)
-		if err != nil {
-			writePage("", w)
-			return
-		}
-	} else {
-		if strings.Contains(r.RequestURI, "favicon") {
-			return
-		}
-		// x, err = readFile(r.RequestURI[1:], true)
-		x, err = readFile(page, true)
-		if err != nil {
-			writePage("", w)
-			return
-		}
+	_ = r
+	x, err = readFile("pages/"+page+".html", true)
+	if err != nil {
+		writePage("", w)
+		return
 	}
 	_ = x
-	// fmt.Printf("%s", pages)
-	// fmt.Println(pages)
+
 	h, b, f := retreiveHBF(page)
 	header := fmt.Sprintf(h, page)
 	template, err := readFile("template.html", true)
@@ -134,10 +123,11 @@ func renderTemplate(page string, w http.ResponseWriter, r *http.Request) {
 	writePage(s, w)
 }
 
+//should be redone
 func retreiveHBF(name string) (string, string, string) {
 	head, err := readFile("head.html", true)
 	_ = err
-	body, err := readFile(name, true)
+	body, err := readFile("pages/"+name+".html", true)
 	_ = err
 	footer, err := readFile("footer.html", true)
 	if err != nil {
@@ -178,8 +168,8 @@ func writePage(s string, w http.ResponseWriter) {
 	w.Write([]byte(s))
 }
 
-func logRequest(r *http.Request) {
-	log.Println(r.RemoteAddr+": ", r.RequestURI)
+func logRequest(message string, r *http.Request) {
+	log.Printf("%s\n", r.RemoteAddr+": "+message+" | "+r.RequestURI)
 }
 
 func readPages() {
@@ -210,4 +200,9 @@ func writePages() {
 
 type Sitemap struct {
 	Pages []string `json:"pages"`
+}
+
+type Webpage struct {
+	Name        string
+	NestedPages bool
 }
