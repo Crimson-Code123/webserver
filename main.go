@@ -16,7 +16,7 @@ var (
 	logger      *os.File
 	fsdir       = "contents"
 	fs          = os.DirFS(fsdir + "/")
-	jpages      *Sitemap
+	jpages      = new(Sitemap)
 	files       []string
 	blocked     = []string{
 		".well-known",
@@ -25,11 +25,9 @@ var (
 
 func main() {
 	setOutput()
-	jpages = new(Sitemap)
 	readPages()
 	log.Println("Starting...")
 	initHandlers()
-	fmt.Println(http.DefaultServeMux)
 	initServer()
 }
 
@@ -56,7 +54,6 @@ func initServer() {
 }
 
 func initHandlers() {
-	//create file list and display
 	getLinks()
 	for _, v := range jpages.Pages {
 		http.HandleFunc(v, func(w http.ResponseWriter, r *http.Request) {
@@ -85,10 +82,15 @@ func renderIndex(w http.ResponseWriter, r *http.Request) {
 }
 
 func renderPage(name string, w http.ResponseWriter, r *http.Request) {
+	for _, x := range blocked {
+		if strings.Contains(r.RequestURI, x) {
+			w.WriteHeader(404)
+			return
+		}
+	}
 	logRequest(name, r)
 	w.Header().Add("Cache-Control", "no-cache")
-	fmt.Printf("Name: %s | URI: %s\n", name, r.RequestURI)
-	//todo: page blocks
+	// fmt.Printf("Name: %s | URI: %s\n", name, r.RequestURI)
 	if r.RequestURI != name { //serve a file
 		http.ServeFileFS(w, r, fs, r.RequestURI)
 	} else { //serve webpage
@@ -102,34 +104,27 @@ func renderPage(name string, w http.ResponseWriter, r *http.Request) {
 }
 
 func renderTemplate(page string, w http.ResponseWriter, r *http.Request) {
-	var x string
-	var err error
-	_ = r
-	x, err = readFile("pages/"+page+".html", true)
-	if err != nil {
-		writePage("", w)
-		return
-	}
-	_ = x
-
-	h, b, f := retreiveHBF(page)
-	header := fmt.Sprintf(h, page)
-	template, err := readFile("template.html", true)
-	if err != nil {
-		log.Println("Template:", err)
-	}
-
-	s := fmt.Sprintf(template, header, b, f)
+	s := formatPage(page)
 	writePage(s, w)
 }
 
-//should be redone
+func formatPage(page string) string {
+	h, b, f := retreiveHBF(page)
+	header := fmt.Sprintf(h, page)
+	template, err := readFile("templates/template.html", true)
+	if err != nil {
+		log.Println("Template:", err)
+	}
+	s := fmt.Sprintf(template, header, b, f)
+	return s
+}
+
 func retreiveHBF(name string) (string, string, string) {
-	head, err := readFile("head.html", true)
+	head, err := readFile("templates/head.html", true)
 	_ = err
 	body, err := readFile("pages/"+name+".html", true)
 	_ = err
-	footer, err := readFile("footer.html", true)
+	footer, err := readFile("templates/footer.html", true)
 	if err != nil {
 		return "", "", ""
 	}
@@ -169,7 +164,7 @@ func writePage(s string, w http.ResponseWriter) {
 }
 
 func logRequest(message string, r *http.Request) {
-	log.Printf("%s\n", r.RemoteAddr+": "+message+" | "+r.RequestURI)
+	log.Printf("%s\n", r.RemoteAddr+":"+r.UserAgent()+" | "+message+" | "+r.RequestURI)
 }
 
 func readPages() {
