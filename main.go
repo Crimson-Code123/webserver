@@ -63,15 +63,7 @@ func initHandlers() {
 }
 
 func getLinks() {
-	// p, err := readFile("pages.txt", false)
-	// _ = err
-	r, err := readFile("resources.txt", false)
-	if err != nil {
-
-	}
-	// for x := range strings.Lines(p) {
-	// 	pages = append(pages, strings.ReplaceAll(x, "\n", ""))
-	// }
+	r := readFile("resources.txt", false)
 	for x := range strings.Lines(r) {
 		files = append(files, strings.ReplaceAll(x, "\n", ""))
 	}
@@ -109,53 +101,72 @@ func renderTemplate(page string, w http.ResponseWriter, r *http.Request) {
 }
 
 func formatPage(page string) string {
-	h, b, f := retreiveHBF(page)
-	header := fmt.Sprintf(h, page)
-	template, err := readFile("templates/template.html", true)
-	if err != nil {
-		log.Println("Template:", err)
+	h, b, f := retreiveBase(page)
+	template := readFile("templates/template.html", true)
+	s := fmt.Sprintf(template, h, b, f)
+	if containsFormat(s) {
+		return formatCount(page, s)
+	} else {
+		return s
 	}
-	s := fmt.Sprintf(template, header, b, f)
-	return s
 }
 
-func retreiveHBF(name string) (string, string, string) {
-	head, err := readFile("templates/head.html", true)
-	_ = err
-	body, err := readFile("pages/"+name+".html", true)
-	_ = err
-	footer, err := readFile("templates/footer.html", true)
-	if err != nil {
-		return "", "", ""
+func formatCount(page string, s string) string {
+	if countFormat(s) > 0 {
+		for i := 0; i < countFormat(s); i++ {
+			switch page {
+			case "sitemap":
+				
+			default:
+				fmt.Println("No format count for this page", page)
+			}
+		}
 	}
+	return ""
+}
+
+func countFormat(page string) int {
+	return strings.Count(page, "%s")
+}
+
+func containsFormat(page string) bool {
+	return strings.Contains(page, "%s")
+}
+
+func retreiveBase(name string) (string, string, string) {
+	var head, body, footer string
+	head = readFile("templates/head.html", true)
+	body = readFile("pages/"+name+".html", true)
+	footer = readFile("templates/footer.html", true)
+	head = fmt.Sprintf(head, name)
 	return head, body, footer
 }
 
-func readFile(s string, useFS bool) (string, error) {
+func readFile(s string, useFS bool) string {
 	if useFS {
 		file, err := fs.Open(s)
 		if err != nil {
 			log.Println(err)
-			return "", err
+			return ""
 		}
 		b, err := io.ReadAll(file)
 		if err != nil {
 			log.Println(err)
-			return "", err
+			return ""
 		}
-		return string(b), nil
+		return string(b)
 	} else {
 		file, err := os.Open(s)
 		if err != nil {
 			log.Println(err)
-			return "", err
+			return ""
 		}
 		b, err := io.ReadAll(file)
 		if err != nil {
 			log.Println(err)
-			return "", err
+			return ""
 		}
-		return string(b), nil
+		return string(b)
 	}
 }
 
