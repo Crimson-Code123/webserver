@@ -14,6 +14,7 @@ var (
 	useTLS      = false
 	logFileName = "site.log"
 	logger      *os.File
+	logging     = false //file output
 	fsdir       = "contents"
 	fs          = os.DirFS(fsdir + "/")
 	jpages      = new(Sitemap)
@@ -24,7 +25,9 @@ var (
 )
 
 func main() {
-	setOutput()
+	if logging {
+		setOutput()
+	}
 	readPages()
 	log.Println("Starting...")
 	initHandlers()
@@ -116,13 +119,22 @@ func formatCount(page string, s string) string {
 		for i := 0; i < countFormat(s); i++ {
 			switch page {
 			case "sitemap":
-				
+				return handleSitemap(s)
 			default:
 				fmt.Println("No format count for this page", page)
 			}
 		}
 	}
 	return ""
+}
+
+func handleSitemap(page string) string {
+	format := `<a href="%s">%s</a><br>`
+	var s string
+	for i := 0; i < len(jpages.Pages); i++ {
+		s += fmt.Sprintf(format, jpages.Pages[i], jpages.Pages[i])
+	}
+	return fmt.Sprintf(page, s)
 }
 
 func countFormat(page string) int {
