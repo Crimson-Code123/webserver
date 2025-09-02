@@ -2,6 +2,7 @@
     "pages": [
         "/",
         "/page",
+        "/page2",
         "/sitemap"
     ]
 }
