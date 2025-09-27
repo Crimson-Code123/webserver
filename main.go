@@ -11,7 +11,7 @@ import (
 )
 
 var (
-	useTLS      = false
+	useTLS      = true
 	logFileName = "site.log"
 	logger      *os.File
 	logging     = false //file output
