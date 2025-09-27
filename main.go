@@ -11,13 +11,15 @@ import (
 )
 
 var (
-	useTLS      = true
+	useTLS      = false
 	logFileName = "site.log"
 	logger      *os.File
 	logging     = false //file output
 	fsdir       = "contents"
 	fs          = os.DirFS(fsdir + "/")
 	jpages      = new(Sitemap)
+	certificate = "fullchain.pem"
+	privkey     = "privkey.pem"
 	files       []string
 	blocked     = []string{
 		".well-known",
@@ -47,12 +49,17 @@ func setOutput() {
 func initServer() {
 	var err error
 	if useTLS {
-		err = http.ListenAndServeTLS("0.0.0.0:443", "fullchain.pem", "privkey.pem", nil)
+		err = http.ListenAndServeTLS("0.0.0.0:443", certificate, privkey, nil)
 	} else {
 		err = http.ListenAndServe("0.0.0.0:80", nil)
 	}
 	if err != nil {
-		log.Panic(err)
+		if strings.Contains(err.Error(), "http: ") {
+
+		} else {
+			log.Panic(err)
+		}
+		
 	}
 }
 
@@ -187,7 +194,7 @@ func writePage(s string, w http.ResponseWriter) {
 }
 
 func logRequest(message string, r *http.Request) {
-	log.Printf("%s\n", r.RemoteAddr+":"+r.UserAgent()+" | "+message+" | "+r.RequestURI)
+	log.Printf("%s\n", r.RemoteAddr+":"+r.UserAgent()+" | "+message+" | "+r.RequestURI+" | "+r.Host)
 }
 
 func readPages() {
