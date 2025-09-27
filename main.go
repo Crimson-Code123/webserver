@@ -47,9 +47,9 @@ func setOutput() {
 func initServer() {
 	var err error
 	if useTLS {
-		err = http.ListenAndServeTLS("0.0.0.0:8080", "cert.pem", "key.pem", nil)
+		err = http.ListenAndServeTLS("0.0.0.0:443", "cert.pem", "key.pem", nil)
 	} else {
-		err = http.ListenAndServe("0.0.0.0:8080", nil)
+		err = http.ListenAndServe("0.0.0.0:80", nil)
 	}
 	if err != nil {
 		log.Panic(err)
