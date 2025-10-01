@@ -54,7 +54,7 @@ func initServer() {
 		err = http.ListenAndServe("0.0.0.0:80", nil)
 	}
 	if err != nil {
-		if strings.Contains(err.Error(), "http: ") {
+		if strings.Contains(err.Error(), "http:") {
 
 		} else {
 			log.Panic(err)
